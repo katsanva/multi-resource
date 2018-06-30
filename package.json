@@ -1,0 +1,25 @@
+{
+  "name": "multi-resource",
+  "version": "1.0.0",
+  "description": "A simple API gateway middleware",
+  "main": "lib",
+  "scripts": {
+    "start": "nodemon --watch lib examples/app",
+    "test:unit": "jest lib",
+    "test:e2e": "jest tests",
+    "test": "npm run test:unit && npm run test:e2e",
+    "coverage": "npm run test:unit -- --coverage",
+    "watch:coverage": "npm run coverage -- --watch",
+    "watch:test": "npm run test -- --watch",
+    "lint": "prettier --single-quote --trailing-comma all --write \"{examples,lib}/**/*.js\""
+  },
+  "devDependencies": {
+    "express": "^4.16.3",
+    "jest": "^23.2.0",
+    "nodemon": "^1.17.5",
+    "prettier": "1.13.7"
+  },
+  "author": "katsanva <this.is.ftm@gmail.com>",
+  "license": "MIT",
+  "dependencies": {}
+}
