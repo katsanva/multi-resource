@@ -1,6 +1,6 @@
 {
   "name": "multi-resource",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple API gateway middleware",
   "main": "lib",
   "scripts": {
@@ -12,6 +12,10 @@
     "watch:coverage": "npm run coverage -- --watch",
     "watch:test": "npm run test -- --watch",
     "lint": "prettier --single-quote --trailing-comma all --write \"{examples,lib}/**/*.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/katsanva/multi-resource"
   },
   "devDependencies": {
     "express": "^4.16.3",
